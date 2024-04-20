@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+* {
+   
+    font-family: 'Open Sans', sans-serif; /* Change default font to Open Sans */
+  }
+
+
+body{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:  url(https://images.unsplash.com/photo-1612085546117-01da93b3f8e9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+
+}
+
+
+.container {
+   
+    height: 50vh;
+    display:flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: 100px;
+    justify-content: center;  
+    color:black;
+   
+   
+    
+   
+}
+.card {
+    display: flex;
+    width: 400px;
+    min-height: 250px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+    padding: 1.5rem;
+    z-index: 10;
+    color: whitesmoke;
+  }
+  
+
+input {
+    padding: 8px;
+    margin: 8px;
+}
+label{
+    display:inline
+}
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: 10px rgb(76, 128, 127);
+    font-weight: 200px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 1px dotted white;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#weatherInfo {
+   
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+.log1{
+    display: flex;
+}
+.inputcont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+    
+}
+#locationInput{
+    width: 300px;
+    border: 3px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+#locationInput::placeholder {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+.btn{
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+#weatherInfo span i.fa-location-dot {
+    color: rgb(239, 242, 245); /* Change the color of the location icon */
+    text-shadow: 0 0 10px rgb(156, 212, 255), 0 0 20px rgb(156, 212, 255), 0 0 30px rgb(156,212,255); /* Add multiple shadows to create a glow effect */
+}
+
+#weatherInfo span i.fa-temperature-three-quarters {
+    color: rgb(255, 255, 255); /* Change the color of the thermometer icon */
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red; /* Add multiple shadows to create a glow effect */
+}
+
+#weatherInfo span i.fa-cloud{
+    color: rgb(255, 255, 255); /* Change the color of the weather icon */
+    text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow; /* Add multiple shadows to create a glow effect */
+}
